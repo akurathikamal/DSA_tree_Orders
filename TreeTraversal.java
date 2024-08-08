@@ -11,8 +11,8 @@ public class TreeTraversal{
       if (node == null) 
           return;
           System.out.print(node.value + " ");
-          inorder(node.left);
-          inorder(node.right);
+          preorder(node.left);
+          preorder(node.right);
   }
   public void inorder(TreeNode node) {
       if (node == null) 
@@ -24,8 +24,8 @@ public class TreeTraversal{
   public void postorder(TreeNode node) {
       if (node == null) 
           return;
-          inorder(node.left);
-          inorder(node.right);
+          postorder(node.left);
+          postorder(node.right);
           System.out.print(node.value + " ");
   }
   public static void main(String[] args) {
